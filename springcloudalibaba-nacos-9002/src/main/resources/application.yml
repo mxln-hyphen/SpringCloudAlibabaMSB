@@ -1,0 +1,15 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.1.100:81
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include:'*'
